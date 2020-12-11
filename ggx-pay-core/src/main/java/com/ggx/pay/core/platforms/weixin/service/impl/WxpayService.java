@@ -4,21 +4,15 @@ import java.util.Map;
 import java.util.UUID;
 
 import org.apache.commons.codec.digest.DigestUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.ggx.pay.core.platforms.weixin.WxUtil;
 import com.ggx.pay.core.platforms.weixin.config.WxpayConfig;
 import com.ggx.pay.core.util.HTTPCommonUtil;
-import com.google.gson.Gson;
 
 public class WxpayService{
 	
-	private static final Logger LOGGER = LoggerFactory.getLogger(WxpayService.class);
 	
 	private WxpayConfig wxpayConfig;
-	
-	private Gson gson = new Gson();
 	
 	public WxpayService(WxpayConfig wxpayConfig) {
 		this.wxpayConfig = wxpayConfig;

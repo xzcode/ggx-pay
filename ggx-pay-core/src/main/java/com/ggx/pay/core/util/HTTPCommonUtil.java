@@ -16,13 +16,9 @@ import org.jsoup.Connection;
 import org.jsoup.Connection.Method;
 import org.jsoup.Connection.Response;
 import org.jsoup.helper.HttpConnection;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class HTTPCommonUtil {
 	
-	private static final Logger LOGGER = LoggerFactory.getLogger(HTTPCommonUtil.class);
-
 	static {
 		trustEveryone();
 	}
